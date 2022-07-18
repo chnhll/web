@@ -12,6 +12,7 @@ export default defineConfig({
             { text: "联队", link: 'wings/changelog', activeMatch: '^/wings/' },
             { text: "地图", link: 'maps/index', activeMatch: '^/maps/' },
             { text: "比赛", link: 'match/index', activeMatch: '^/match/' },
+            { text: "日报", link: 'news/index', activeMatch: '^/news/' },
         ],
 
         sidebar: {
@@ -20,6 +21,7 @@ export default defineConfig({
             '/wings': getWingsSidebar(),
             '/maps': getMapsSidebar(),
             '/match': getMatchSidebar(),
+            '/news': getNewsSidebar(),
             '/': getGuideSidebar()
         },
 
@@ -103,23 +105,6 @@ function getWingsSidebar() {
     ]
 }
 
-function getMatchSidebar() {
-    return [
-        {
-            text: "开始",
-            items: [
-                { text: "简介", link: "/match/index" }
-            ]
-        },
-        {
-            text: "2022年",
-            items: [
-                { text: "夏季赛", link: "/match/2022/summber" }
-            ]
-        }
-    ]
-}
-
 function getMapsSidebar() {
     return [
         {
@@ -141,6 +126,40 @@ function getMapsSidebar() {
                 { text: "紫心小道", link: "/maps/phl" },
                 { text: "斯大林格勒", link: "/maps/stalin" },
                 { text: "库尔斯克", link: "/maps/kursk" },
+            ]
+        }
+    ]
+}
+
+function getMatchSidebar() {
+    return [
+        {
+            text: "开始",
+            items: [
+                { text: "简介", link: "/match/index" }
+            ]
+        },
+        {
+            text: "2022年",
+            items: [
+                { text: "夏季赛", link: "/match/2022/summber" }
+            ]
+        }
+    ]
+}
+
+function getNewsSidebar() {
+    return [
+        {
+            text: "开始",
+            items: [
+                { text: "简介", link: "/news/index" }
+            ]
+        },
+        {
+            text: "2022年07月",
+            items: [
+                { text: "18日", link: "/news/2022-07/18" }
             ]
         }
     ]
