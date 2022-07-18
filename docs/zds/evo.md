@@ -1,6 +1,7 @@
+![](/assets/zds/logo/evo.jpg)
+
 # EVO战队
-<!-- ![](/assets/zds/logo/evo.jpg =128x128) -->
-<img src="/assets/zds/logo/evo.jpg" width="128" alt="evo-logo" />
+<!-- <img src="/assets/zds/logo/evo.jpg" width="128" alt="evo-logo" /> -->
 
 ## 服务器
 - 

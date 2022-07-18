@@ -6,3 +6,4 @@ package-lock.json
 yarn.error
 
 docs/.vitepress/dist
+dist

@@ -1,10 +1,15 @@
-module.exports = {
+import { defineConfig } from "vitepress"
+
+export default defineConfig({
+
     title: "人间地狱",
+    outDir: "../dist",
     themeConfig: {
-        docsDir: 'docs',
+        // docsDir: 'docs',
         nav: [
             { text: '指引', link: '/', activeMatch: '^/$|^/guide/' },
             { text: "战队", link: 'zds/changelog', activeMatch: '^/zds/' },
+            { text: "联队", link: 'wings/changelog', activeMatch: '^/wings/' },
             { text: "地图", link: 'maps/index', activeMatch: '^/maps/' },
             { text: "比赛", link: 'match/index', activeMatch: '^/match/' },
         ],
@@ -12,7 +17,7 @@ module.exports = {
         sidebar: {
             '/guide': getGuideSidebar(),
             '/zds': getZdsSidebar(),
-            '/wings': getZdsSidebar(),
+            '/wings': getWingsSidebar(),
             '/maps': getMapsSidebar(),
             '/match': getMatchSidebar(),
             '/': getGuideSidebar()
@@ -20,7 +25,7 @@ module.exports = {
 
         lastUpdatedText: '更新时间'
     }
-}
+})
 
 function getGuideSidebar() {
     return [
@@ -50,11 +55,12 @@ function getZdsSidebar() {
                 {text: "Alpha", link: "/zds/alpha"},
                 {text: "IR", link: "/zds/ir"},
                 {text: "JT", link: "/zds/jt"},
-                {text: "CHN", link: "/zds/cnh"},
+                {text: "CNH", link: "/zds/cnh"},
                 {text: "A.U.F", link: "/zds/auf"},
                 {text: "革命军", link: "/zds/gmj"},
+                {text: "EROS", link: "/zds/eros"},
                 {text: "高达社区", link: "/zds/gd"},
-                {text: "雪绒花", link: "/zds/ewss"},
+                {text: "EWSS", link: "/zds/ewss"},
                 {text: "Dsquad社区", link: "/zds/dsquad"},
                 {text: "Coh", link: "/zds/coh"},
                 {text: "S.T.", link: "/zds/st"},
@@ -66,12 +72,32 @@ function getZdsSidebar() {
                 { text: "S.A.S", link: "/zds/old/sas" },
                 { text: "I.C.F", link: "/zds/old/icf" },
                 { text: "东德消防", link: "/zds/old/gd" },
+                { text: "AI", link: "/zds/old/ai" },
+            ]
+        }
+    ]
+}
+
+function getWingsSidebar() {
+    return [
+        {
+            text: "战队更新",
+            items: [
+                { text: "更新公告", link: "/wings/changelog" }
             ]
         }, {
-            text: "联队群",
+            text: "联队",
             items: [
                 { text: "Trigger", link: "/wings/tr" },
-                { text: "SESH", link: "/wings/sesh" }
+                { text: "SESH", link: "/wings/sesh" },
+                { text: "JTIR", link: "/wings/jtir" },
+                { text: "FOC", link: "/wings/foc" },
+                { text: "A8", link: "/wings/a8" }
+            ]
+        }, {
+            text: "历史联队",
+            items: [
+                { text: "CNUT", link: "/wings/old/cnut" }
             ]
         }
     ]
