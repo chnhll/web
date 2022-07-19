@@ -39,6 +39,11 @@ function getGuideSidebar() {
                 { text: "开始", link: "/" },
                 { text: "如何使用？", link: "/guide/how-use" },
             ]
+        }, {
+            text: "更新",
+            items: [
+                { text: "U12", link: "/guide/update/u12" }
+            ]
         }
     ]
 }
