@@ -1,4 +1,6 @@
 import { defineConfig } from "vitepress"
+import fs from "fs"
+import path from "path"
 
 export default defineConfig({
 
@@ -149,18 +151,20 @@ function getMatchSidebar() {
 }
 
 function getNewsSidebar() {
-    return [
-        {
-            text: "开始",
-            items: [
-                { text: "简介", link: "/news/index" }
-            ]
-        },
-        {
-            text: "2022年07月",
-            items: [
-                { text: "18日", link: "/news/2022-07/18" }
-            ]
+    let req = [{ text: "开始", items: [{ text: "简介", link: "/news/index" }]}];
+    let p = path.join(".", "docs", "news"); // "./docs/news";
+    let md = fs.readdirSync(p);
+    for (let i = 0; i < md.length; i++) {
+        if (md[i] === "index.md") continue;
+        let marr = md[i].split("-");
+        let m = marr.join("年")+"月";
+        let o: {text: string, items: {text: string, link: string}[]} = { text: m, items: [] };
+        let dd = fs.readdirSync(path.join(p, md[i]));
+        for (let k = 0; k < dd.length; k++) {
+            let d = dd[i].split(".")[0];
+            o.items.push({ text: d+"日", link: `/news/${md[i]}/${d}`});
         }
-    ]
+        req.push(o);
+    }
+    return req;
 }
