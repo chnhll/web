@@ -133,6 +133,7 @@ function getMapsSidebar() {
                 { text: "紫心小道", link: "/maps/phl" },
                 { text: "斯大林格勒", link: "/maps/stalin" },
                 { text: "库尔斯克", link: "/maps/kursk" },
+                { text: "奥马哈海滩", link: "/maps/omh" },
             ]
         }
     ]
