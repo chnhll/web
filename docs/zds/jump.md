@@ -26,6 +26,7 @@
 | 四队     | 小树人(Groot!)  |   |
 | 五队（JHG）     | 子不语(Orzi!)  |   |
 | 六队（妹队）     | 易安仔  |   |
+| 七队     | 秃头披风侠  |   |
 
 <script setup lang="ts">
 // import Radar from "/assets/js/radar"
