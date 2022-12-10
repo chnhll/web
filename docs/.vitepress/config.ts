@@ -135,6 +135,7 @@ function getMapsSidebar() {
                 { text: "库尔斯克", link: "/maps/kursk" },
                 { text: "奥马哈海滩", link: "/maps/omh" },
                 { text: "雷马根大桥", link: "/maps/rmg" },
+                { text: "哈尔科夫", link: "/maps/hrkf" },
             ]
         }
     ]
