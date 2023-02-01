@@ -73,6 +73,7 @@ function getZdsSidebar() {
                 {text: "Dsquad社区", link: "/zds/dsquad"},
                 {text: "Coh", link: "/zds/coh"},
                 {text: "S.T.", link: "/zds/st"},
+                {text: "Caged", link: '/zds/caged'}
             ]
         }, {
             text: "历史战队",
