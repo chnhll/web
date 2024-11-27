@@ -42,7 +42,8 @@ function getGuideSidebar() {
         }, {
             text: "更新",
             items: [
-                { text: "U12", link: "/guide/update/u12" }
+                { text: "U12", link: "/guide/update/u12" },
+                { text: "U16", link: "/guide/update/u16" }
             ]
         }
     ]
