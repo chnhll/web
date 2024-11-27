@@ -28,6 +28,8 @@
 | 五队（JHG）     | 子不语(Orzi!)  |   |
 | 六队（妹队）     | 易安仔  |   |
 | 七队     | 秃头披风侠  |   |
+| 八队     | Solitary Valiant  |   |
+| 九队     | 平塔岛象龟  |   |
 
 <script setup lang="ts">
 // import Radar from "/assets/js/radar"
