@@ -43,7 +43,8 @@ function getGuideSidebar() {
             text: "更新",
             items: [
                 { text: "U12", link: "/guide/update/u12" },
-                { text: "U16", link: "/guide/update/u16" }
+                { text: "U16", link: "/guide/update/u16" },
+                { text: "U16-2", link: "/guide/update/u16-2" }
             ]
         }
     ]
