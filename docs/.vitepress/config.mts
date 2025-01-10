@@ -27,7 +27,12 @@ export default defineConfig({
             '/': getGuideSidebar()
         },
 
-        lastUpdatedText: '更新时间'
+        lastUpdatedText: '更新时间',
+
+        docFooter: {
+            prev: '上一页',
+            next: '下一页'
+        }
     }
 })
 
@@ -100,16 +105,17 @@ function getWingsSidebar() {
         }, {
             text: "联队",
             items: [
-                { text: "Trigger", link: "/wings/tr" },
+                { text: "星火长明(SEL)", link: "/wings/sel" },
                 { text: "SESH", link: "/wings/sesh" },
-                { text: "JTIR", link: "/wings/jtir" },
-                { text: "FOC", link: "/wings/foc" },
-                { text: "A8", link: "/wings/a8" }
+                { text: "FOC", link: "/wings/foc" }
             ]
         }, {
             text: "历史联队",
             items: [
-                { text: "CNUT", link: "/wings/old/cnut" }
+                { text: "CNUT", link: "/wings/old/cnut" },
+                { text: "Trigger", link: "/wings/tr" },
+                { text: "JTIR", link: "/wings/jtir" },
+                { text: "A8", link: "/wings/a8" }
             ]
         }
     ]
